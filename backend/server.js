@@ -3,7 +3,7 @@ import path from "path";
 import fs from "fs";
 const _dirname=path.resolve();
 const app=express();
-const port=3000;
+const port=80;
 
 app.use(express.static("frontend"));
 app.use(express.json());

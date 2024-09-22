@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/map.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2e590b2eba76b654643377963e4f490c"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="map_header" >
+        <a href="/.."><img class="map_header_logo" src="../../images/image 1.png" alt="컴세바로고"></a>
+        <div class="map_header_right">
+            <a href="/map">오시는 길</a>
+            <a href="/guest">방명록</a>
+        </div>
+        </header>
+    <div class="map-page">
+        <div class="map_body">
+            <div class="map_body_left">지도</div>
+            <div class="map_body_right">
+               <p>INCHEON COMSEBA</p>
+               <p>컴세바 써니랩학원인천지점</p>
+               <p>인천광역시 연수구 동춘동 (먼우금로 92) 대광빌딩 5층</p>
+               <p>CALL : 032. 822. 4300 / 010. 4591. 8351</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var mapContainer = document.querySelector('.map_body_left'),
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.4081, 126.6707),
+        level: 3
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption);
+
+var markerPosition  = new kakao.maps.LatLng(37.4081, 126.6707); 
+
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+marker.setMap(map);
+</script>
+</html>

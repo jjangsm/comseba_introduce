@@ -1,0 +1,79 @@
+@import url("./reset.css");
+@import url("./common.css");
+
+.map-page
+{
+    padding: 0 10%;
+}
+
+.map_header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.map_header_logo
+{
+    margin-left: 2rem;
+}
+
+.map_header_right
+{
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.map_header_right a
+{
+    color: var(--main-color);
+}
+
+.map_body
+{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:  10rem auto;
+    height: 500px;
+}
+
+.map_body_left
+{
+    width: 50%;
+}
+
+.map_body_right
+{
+    position: relative;
+    color: white;
+    background: var(--dark-gray);
+    padding: 2rem;
+}
+
+.map_body_right p:nth-of-type(1)
+{
+    font-size: 24px;
+    margin-bottom: 3rem;
+}
+
+.map_body_right p:nth-of-type(2)
+{
+    font-size: 30px;
+}
+
+.map_body_right p:nth-of-type(3)
+{
+    position: absolute;
+    bottom: 3rem;
+    font-size: 0.7rem;
+}
+
+.map_body_right p:nth-of-type(4)
+{
+    position: absolute;
+    bottom: 2rem;
+    font-size: 0.7rem;
+}

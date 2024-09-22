@@ -1,0 +1,98 @@
+@import url("./reset.css");
+@import url("./common.css");
+
+.guest
+{
+    padding: 0 10%;
+}
+
+.guest_header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.guest_header_logo
+{
+    margin-left: 2rem;
+}
+
+.guest_header_right
+{
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.guest_header_right a
+{
+    color: var(--main-color);
+}
+
+.guest_form
+{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.guest_form p
+{
+    font-size: 32px;
+}
+
+.guest_form input
+{
+    width: 100%;
+}
+
+.guest_form textarea
+{
+    width: 100%;
+    resize: none;
+}
+
+.guest_form button
+{
+    width: 15%;
+    height: 30px;
+    background-color: var(--btn);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.guest_comment
+{
+    border-top: 1px solid var(--dark-gray);
+    margin-top: 2rem;
+    display: flex;
+}
+
+.guest_comment_left
+{
+    padding: 2rem;
+}
+
+.guest_comment_left_name
+{
+    background-color: var(--dark-gray);
+    color: white;
+    padding: 1rem;
+}
+
+.guest_comment_right
+{
+    width: 70%;
+    padding: 1rem;
+}
+
+.guest_comment_right_time
+{
+    margin-top: 1rem;
+    color: var(--comment-item);
+}
